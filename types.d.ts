@@ -24,7 +24,7 @@ type EventPayloadMapping = {
 type UnsubscribeFunction = () => void;
 
 interface Window {
-  electron: {
+  ElectronWebInstance: {
     subscribeStatistics: (
       callback: (statistics: Statistics) => void
     ) => UnsubscribeFunction;
